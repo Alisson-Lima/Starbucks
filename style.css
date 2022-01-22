@@ -1,5 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@-webkit-keyframes carregarElementos {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes carregarElementos {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes frapuccino {
+  0% {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes frapuccino {
+  0% {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes frapuccinoImg {
+  0% {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform: rotateZ(-12deg);
+            transform: rotateZ(-12deg);
+  }
+}
+
+@keyframes frapuccinoImg {
+  0% {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform: rotateZ(-12deg);
+            transform: rotateZ(-12deg);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -85,6 +160,11 @@ body .container header {
 }
 
 body .container header .nav-menu {
+  opacity: 0;
+  -webkit-animation: carregarElementos .5s normal;
+          animation: carregarElementos .5s normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,6 +286,13 @@ body .container main {
 body .container main h1 {
   font-size: 2.4rem;
   margin-bottom: 20px;
+  opacity: 0;
+  -webkit-animation: carregarElementos .8s normal;
+          animation: carregarElementos .8s normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
 }
 
 body .container main h1 b {
@@ -215,6 +302,23 @@ body .container main h1 b {
 
 body .container main p {
   margin-bottom: 60px;
+  opacity: 0;
+  -webkit-animation: carregarElementos .8s normal;
+          animation: carregarElementos .8s normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+body .container main .btn-social {
+  opacity: 0;
+  -webkit-animation: carregarElementos .8s normal;
+          animation: carregarElementos .8s normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
 }
 
 body .container main .marketing-side .social-icon-container {
@@ -238,6 +342,13 @@ body .container main .marketing-side .social-icon-container {
   width: 70px;
   height: 115px;
   border-top-left-radius: 30px;
+  opacity: 0;
+  -webkit-animation: carregarElementos .8s normal;
+          animation: carregarElementos .8s normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
 }
 
 body .container main .marketing-side .social-icon-container img {
@@ -253,6 +364,16 @@ body .container main .frapuccino-side {
   z-index: -1;
   top: 200px;
   left: 0;
+}
+
+body .container main .frapuccino-side img {
+  opacity: 0;
+  -webkit-animation: frapuccinoImg 1s normal;
+          animation: frapuccinoImg 1s normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 @media screen and (max-height: 851px) and (min-width: 330px) {
